@@ -1,0 +1,38 @@
+{
+  "name": "md-to-obsidian-dom",
+  "version": "1.0.7",
+  "description": "Convert Markdown to Obsidian DOM API code for plugin help documentation",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "bin": {
+    "md-to-obsidian-dom": "./dist/bin/generate.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepare": "npm run build",
+    "prepack": "npm run build",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "markdown",
+    "obsidian",
+    "dom",
+    "codegen",
+    "documentation"
+  ],
+  "author": "",
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@types/prismjs": "^1.26.6",
+    "prismjs": "^1.30.0"
+  }
+}
